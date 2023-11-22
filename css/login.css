@@ -1,4 +1,4 @@
-.login_backgroud{
+.login_background{
     background: url("../images/backgroud-image-login.jpg") no-repeat center center fixed;
     background-size: cover ;
 }
@@ -183,5 +183,8 @@ div.dashboard_content_main{
     background: white;
     min-height: 600px;
     height: 100%;
+}
+.menuText{
+    margin-left: 8px;
 }
 
