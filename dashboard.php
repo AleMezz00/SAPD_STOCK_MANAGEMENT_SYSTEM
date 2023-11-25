@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['user'])) header('location: login.php');
+
+    $user = $_SESSION['user'];
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,7 +19,7 @@
                 <h3 class="dashboard_logo" id="dashboard_logo">SMS</h3>
                 <div class="dashboard_sidebar_user">
                     <img src="images/user.png" alt="User image." id="userImage"/>
-                    <span>ADMIN</span>
+                    <span><?= $user['first_name'] . ' ' . $user['last_name'] ?> </span>
                 </div>
                 <div class="dashboard_sidebar_menus">
                     <ul class="dashboard_menu_lists">
@@ -27,7 +35,7 @@
             <div class="dashboard_content_container" id="dashboard_content_container">
                 <div class="dashboard_topNav">
                     <a href="" id="toggleBtn"> <i class="fa fa-navicon"></i></a>
-                    <a href="" id="logoutBtn"> <i class="fa fa-power-off"></i>Log-out</a>
+                    <a href="database/logout.php" id="logoutBtn"> <i class="fa fa-power-off"></i>Log-out</a>
                 </div>
                 <div class="dashboard_content">
                     <div class="dashboard_content_main">
