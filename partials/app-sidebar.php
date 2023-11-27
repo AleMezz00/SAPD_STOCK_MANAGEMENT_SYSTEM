@@ -12,7 +12,7 @@
                 <a href="./dashboard.php"> <i class="fa fa-dashboard"></i> <span class="menuText"> Dashboard </span> </a>
             </li>
             <li>
-                <a href="./product.php"> <i class="fa fa-dashboard"></i> <span class="menuText"> Product Management </span> </a>
+                <a href="./product.php"> <i class="fa fa-clipboard"></i> <span class="menuText"> Product Management </span> </a>
             </li>
         </ul>
     </div>
