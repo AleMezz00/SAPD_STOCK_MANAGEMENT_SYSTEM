@@ -10,7 +10,7 @@
 <html>
     <head>
         <title>Dashboard - Stock Management System</title>
-        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <link rel="stylesheet" type="text/css" href="css/login1.css">
         <script src="http://use.fontawesome.com/0c7a3095b5.js"></script>
     </head>
     <body>
@@ -24,10 +24,7 @@
             
                 <div class="dashboard_content">
                     <div class="dashboard_content_main">
-                        <form action="">
-                            <div>
-                                <label for=""></label>
-                            </div>
+                        <form>
                         </form>
                     </div>   
                 </div>

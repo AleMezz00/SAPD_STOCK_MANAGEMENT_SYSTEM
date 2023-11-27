@@ -29,8 +29,8 @@
 <html>
     <head>
         <title>Login - Stock Management System</title>
-
-        <link rel="stylesheet" type="text/css" href="css/login.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/login1.css">
     </head>
     <body id="loginBody" class="login_background">
         <?php 
