@@ -142,18 +142,20 @@ ul.dashboard_menu_lists{
     padding: 0;
 }
 
-ul.dashboard_menu_lists li{
-    padding:15px 15px;
-    font-size: 18px;
+ul.dashboard_menu_lists li.liMainMenu{
+    padding-top:15px;
     text-transform: uppercase;
 }
 
-ul.dashboard_menu_lists li a{
+ul.dashboard_menu_lists li.liMainMenu a{
+    padding:0px 15px;
     text-decoration: none;
     color: aliceblue;
     height: 100%;
     display: block;
-    font-size: 20px;
+    font-size: 19px;
+    padding-bottom: 15px;
+ 
 }
 
 ul.dashboard_menu_lists li.menuActive{
@@ -189,4 +191,23 @@ div.dashboard_content_main{
 }
 .menuText{
     margin-left: 8px;
+}
+ul.subMenus{
+    list-style-type: none;
+    background: #032b59;
+    display: none;
+}
+a.subMenuLink{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-transform: none;
+    font-size: 16px !important;
+}
+a.subMenuLink i{
+    font-size: 16px !important;
+    width: 16px !important;
+}
+i.mainMenuIconArrow{
+    float: right;
+    font-size: 22px !important;
 }

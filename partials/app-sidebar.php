@@ -8,11 +8,20 @@
     <div class="dashboard_sidebar_menus">
         <ul class="dashboard_menu_lists">
             <!-- class="menuActive" -->
-            <li>
+            <li class="liMainMenu">
                 <a href="./dashboard.php"> <i class="fa fa-dashboard"></i> <span class="menuText"> Dashboard </span> </a>
             </li>
-            <li>
-                <a href="./product.php"> <i class="fa fa-clipboard"></i> <span class="menuText"> Product Management </span> </a>
+            <li class="liMainMenu showHideSubMenu">
+                <a href="javascript:void(0);" class="showHideSubMenu"> 
+                    <i class="fa fa-clipboard showHideSubMenu"></i> 
+                    <span class="menuText showHideSubMenu"> Product Management </span> 
+                    <i class="fa fa-angle-down mainMenuIconArrow showHideSubMenu"></i> 
+                </a>
+
+                <ul class="subMenus" id="product">
+                    <li><a class="subMenuLink" href="#"> <i class="fa fa-circle-o"></i> View Product</a></li>
+                    <li><a class="subMenuLink" href="#"> <i class="fa fa-circle-o"></i> Add Product</a></li>
+                </ul>
             </li>
         </ul>
     </div>

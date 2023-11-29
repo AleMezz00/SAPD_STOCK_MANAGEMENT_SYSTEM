@@ -33,3 +33,26 @@ toggleBtn.addEventListener( 'click', (event)  => {
 }
       
 });
+
+document.addEventListener('click', function(e){
+    let clickedEl = e.target;
+
+    if(clickedEl.classList.contains('showHideSubMenu')){
+        let subMenu = clickedEl.closest('li').querySelector('.subMenus');
+        let mainMenuIcon = clickedEl.closest('li').querySelector('.mainMenuIconArrow');
+
+        console.log(mainMenuIcon);
+
+        if(subMenu != null){
+            if(subMenu.style.display === 'block'){
+                subMenu.style.display = 'none';
+                mainMenuIcon.classList.remove('fa-angle-up');
+                mainMenuIcon.classList.add('fa-angle-down');
+            } else {
+                subMenu.style.display = 'block';
+                mainMenuIcon.classList.remove('fa-angle-down');
+                mainMenuIcon.classList.add('fa-angle-up');
+            }
+        }
+    }
+});

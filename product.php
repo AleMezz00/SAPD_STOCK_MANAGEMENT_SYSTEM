@@ -10,7 +10,7 @@
 <html>
     <head>
         <title>Dashboard - Stock Management System</title>
-        <link rel="stylesheet" type="text/css" href="css/login1.css">
+        <link rel="stylesheet" type="text/css" href="css/login2.css?v=<?= time(); ?>">
         <script src="http://use.fontawesome.com/0c7a3095b5.js"></script>
     </head>
     <body>
@@ -31,6 +31,6 @@
             </div>
         </div>
 
-        <script src="js/script.js"></script>
+        <script src="js/script.js?v=<?= time(); ?>"></script>
     </body>
 </html>
