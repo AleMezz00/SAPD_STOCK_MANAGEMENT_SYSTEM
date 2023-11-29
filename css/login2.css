@@ -92,7 +92,7 @@ div.loginButtonContainer button:hover{
 
 div.dashboard_sidebar{
     width: 20%;
-    background: #323232;
+    background: #585757;
     height: 100vh;
 }
 
@@ -210,4 +210,10 @@ a.subMenuLink i{
 i.mainMenuIconArrow{
     float: right;
     font-size: 22px !important;
+}
+.subMenuActive{
+    font-weight: bold;
+    border-top: 2px solid aliceblue;
+    border-bottom: 2px solid aliceblue;
+    background: #1b6cc8;
 }

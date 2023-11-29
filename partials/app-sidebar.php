@@ -13,14 +13,14 @@
             </li>
             <li class="liMainMenu showHideSubMenu">
                 <a href="javascript:void(0);" class="showHideSubMenu"> 
-                    <i class="fa fa-clipboard showHideSubMenu"></i> 
+                    <i class="fa fa-tag showHideSubMenu"></i> 
                     <span class="menuText showHideSubMenu"> Product Management </span> 
                     <i class="fa fa-angle-down mainMenuIconArrow showHideSubMenu"></i> 
                 </a>
 
                 <ul class="subMenus" id="product">
-                    <li><a class="subMenuLink" href="#"> <i class="fa fa-circle-o"></i> View Product</a></li>
-                    <li><a class="subMenuLink" href="#"> <i class="fa fa-circle-o"></i> Add Product</a></li>
+                    <li><a class="subMenuLink" href="./product.php"> <i class="fa fa-circle-o"></i> View Product</a></li>
+                    <li><a class="subMenuLink" href="./add-product.php"> <i class="fa fa-circle-o"></i> Add Product</a></li>
                 </ul>
             </li>
         </ul>
