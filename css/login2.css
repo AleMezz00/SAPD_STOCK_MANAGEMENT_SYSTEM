@@ -5,7 +5,7 @@ body.login_background{
    
 div.loginHeader{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 4.5%;
 }
 div.loginHeader h1{
@@ -91,13 +91,13 @@ div.loginButtonContainer button:hover{
 }
 
 div.dashboard_sidebar{
-    width: 20%;
+    width: 22%;
     background: #585757;
     height: 100vh;
 }
 
 div.dashboard_content_container{
-    width: 80%;
+    width: 78%;
     background: aliceblue;
 }
 
@@ -186,9 +186,66 @@ div.dashboard_content{
 }
 div.dashboard_content_main{
     background: white;
-    min-height: 720px;
+    min-height: 640px;
     height: 100%;
 }
+form::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+form.appForm{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #cecfd0;
+    border-radius: 5px;
+    background: #dadfe6;
+}
+form label{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+form input.appFormInput{
+    width: 100%;
+    height: 33px;
+    border: 1px solid #d6d7da;
+    border-radius: 5px;
+}
+div.appFormInputContainer{
+    margin-bottom: 15px;
+}
+div#userAddFormContainer{
+    padding-top: 100px;
+}
+button.appBtn{
+    background: #1b6cc8;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 20px;
+    float: right;
+    border-radius: 8px;
+}
+button.appBtn:hover{
+    cursor: pointer;
+    background: #032b59;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+}
+p.responseMessage{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 33px;
+    padding: 20px;
+}
+p.responseMessage__error{
+    background: lightcoral;
+}
+p.responseMessage__success{
+    background: lightgreen;
+}
+
 .menuText{
     margin-left: 8px;
 }

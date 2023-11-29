@@ -5,9 +5,9 @@ toggleBtn.addEventListener( 'click', (event)  => {
     event.preventDefault();
 
     if (sidebarIsOpen){
-    dashboard_sidebar.style.width = '11%';
+    dashboard_sidebar.style.width = '12%';
     dashboard_sidebar.style.transition = '0.4s all';
-    dashboard_content_container.style.width = '89%';
+    dashboard_content_container.style.width = '88%';
     dashboard_logo.style.fontSize = '60px';
     userImage.style.width = '60px'
     menuIcons = document.getElementsByClassName('menuText');
@@ -19,8 +19,8 @@ toggleBtn.addEventListener( 'click', (event)  => {
     sidebarIsOpen = false;   
 
 } else {
-    dashboard_sidebar.style.width = '21%';
-    dashboard_content_container.style.width = '79%';
+    dashboard_sidebar.style.width = '22%';
+    dashboard_content_container.style.width = '78%';
     dashboard_logo.style.fontSize = '80px';
     userImage.style.width = '80px'
     menuIcons = document.getElementsByClassName('menuText');

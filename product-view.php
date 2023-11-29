@@ -22,14 +22,14 @@
 
             <?php include('partials/app-topnav.php') ?>
             
-                <div class="dashboard_content">
-                    <div class="dashboard_content_main">
-                        <form>
-                        </form>
-                    </div>   
+                    <div class="dashboard_content">
+                        <div class="dashboard_content_main">
+                            <form>
+                            </form>
+                        </div>   
+                    </div>
                 </div>
             </div>
-        </div>
 
         <script src="js/script.js?v=<?= time(); ?>"></script>
     </body>
