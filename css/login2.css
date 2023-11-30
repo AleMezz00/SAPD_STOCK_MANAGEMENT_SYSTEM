@@ -216,7 +216,7 @@ div.appFormInputContainer{
     margin-bottom: 15px;
 }
 div#userAddFormContainer{
-    padding-top: 75px;
+    padding-top: 45px;
 }
 button.appBtn{
     background: #1b6cc8;
@@ -259,10 +259,11 @@ div.column{
     padding: 0px 10px;
 }
 div.column-5{
-    width: 36.67%;
+    width: 37.67%;
+    margin-left: 11px;
 }
 div.column-7{
-    width: 58.33%;
+    width: 61.33%;
 }
 h1.section_header{
     font-size: 21px;
@@ -292,13 +293,18 @@ table td{
     padding: 5px;
 }
 p.userCount{
+    margin-top: 5px;
     text-align: right;
     font-size: 15px;
     font-weight: bold;
     text-transform: uppercase;
     color: #1b6cc8;
 }
-
+.editDelete{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .menuText{
     margin-left: 8px;
