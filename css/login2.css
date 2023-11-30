@@ -195,7 +195,7 @@ form::after{
     display: block;
 }
 form.appForm{
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
     padding: 10px;
     border: 1px solid #cecfd0;
@@ -216,7 +216,7 @@ div.appFormInputContainer{
     margin-bottom: 15px;
 }
 div#userAddFormContainer{
-    padding-top: 100px;
+    padding-top: 75px;
 }
 button.appBtn{
     background: #1b6cc8;
@@ -245,6 +245,60 @@ p.responseMessage__error{
 p.responseMessage__success{
     background: lightgreen;
 }
+
+/* USER ADD PAGE */
+
+div.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+div.column{
+    width: 100%;
+    padding: 0px 10px;
+}
+div.column-5{
+    width: 36.67%;
+}
+div.column-7{
+    width: 58.33%;
+}
+h1.section_header{
+    font-size: 21px;
+    color: #1b6cc8;
+    border-bottom: 1px solid #032b59;
+    padding-bottom: 11px;
+    padding: 10px;
+    border-left: 4px solid  #032b59;
+    margin-bottom: 15px;
+}
+table, th, td{
+    border: 1px solid #cacaca;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+}
+table th{
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    background: aliceblue;
+}
+table td{
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+}
+p.userCount{
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1b6cc8;
+}
+
 
 .menuText{
     margin-left: 8px;
