@@ -9,8 +9,8 @@
         <ul class="dashboard_menu_lists">
             <!-- class="menuActive" -->
 
-            <li class="liMainMenu">
-                <a href="./dashboard.php" href="javascript:void(0);"> <i class="fa fa-dashboard"></i> <span class="menuText"> Dashboard </span> </a>
+            <li class="liMainMenus ">
+                <a href="./dashboard.php"> <i class="fa fa-dashboard"></i> <span class="menuText"> Dashboard </span> </a>
             </li>
 
             <li class="liMainMenu showHideSubMenu">

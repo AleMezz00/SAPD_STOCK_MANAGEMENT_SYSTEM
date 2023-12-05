@@ -158,11 +158,26 @@ ul.dashboard_menu_lists li.liMainMenu a{
     padding-bottom: 15px;
  
 }
+ul.dashboard_menu_lists li.liMainMenus{
+    padding-top:15px;
+    text-transform: uppercase;
+}
+
+ul.dashboard_menu_lists li.liMainMenus a{
+    padding:0px 15px;
+    text-decoration: none;
+    color: aliceblue;
+    height: 100%;
+    display: block;
+    font-size: 16px;
+    padding-bottom: 15px;
+ 
+}
 
 ul.dashboard_menu_lists li.menuActive{
     background: #043976;
     color: aliceblue;
-    }
+}
 
 ul.dashboard_menu_lists li:hover{
     background: #043976;
@@ -333,4 +348,5 @@ i.mainMenuIconArrow{
     border-top: 2px solid aliceblue;
     border-bottom: 2px solid aliceblue;
     background: #1b6cc8;
+    padding-top: 15px !important;
 }

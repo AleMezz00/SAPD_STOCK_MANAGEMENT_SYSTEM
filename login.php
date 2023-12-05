@@ -30,7 +30,7 @@
     <head>
         <title>Login - Stock Management System</title>
         
-        <link rel="stylesheet" type="text/css" href="css/login2.css">
+        <link rel="stylesheet" type="text/css" href="css/login3.css">
     </head>
     <body id="loginBody" class="login_background">
         <?php 

@@ -10,8 +10,8 @@
 <html>
     <head>
         <title>Dashboard - Stock Management System</title>
-        <link rel="stylesheet" type="text/css" href="css/login2.css">
-        <script src="http://use.fontawesome.com/0c7a3095b5.js"></script>
+
+        <?php include('partials/app-header-scripts.php'); ?>
     </head>
     <body>
         <div id="dashboardMainContainer">
@@ -31,5 +31,6 @@
         </div>
 
         <script src="js/script.js"></script>
+        <?php include('partials/app-scripts.php'); ?>
     </body>
 </html>
