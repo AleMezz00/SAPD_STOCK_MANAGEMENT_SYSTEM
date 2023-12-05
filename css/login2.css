@@ -1,3 +1,4 @@
+/* LOGIN STYLE */
 body.login_background{
     background: url('../images/background-image-login.jpg') no-repeat center center fixed;
     background-size: cover;   
@@ -83,7 +84,7 @@ div.loginButtonContainer button:hover{
     font-style: italic;
 }
 
-/* DASHBOARD STYLE*/
+/* DASHBOARD STYLE + SYDEBAR STYLE */
 
 #dashboardMainContainer{
     display: flex;
@@ -91,13 +92,13 @@ div.loginButtonContainer button:hover{
 }
 
 div.dashboard_sidebar{
-    width: 22%;
+    width: 21%;
     background: #585757;
     height: 100vh;
 }
 
 div.dashboard_content_container{
-    width: 78%;
+    width: 79%;
     background: aliceblue;
 }
 
@@ -153,7 +154,7 @@ ul.dashboard_menu_lists li.liMainMenu a{
     color: aliceblue;
     height: 100%;
     display: block;
-    font-size: 19px;
+    font-size: 16px;
     padding-bottom: 15px;
  
 }
@@ -188,6 +189,8 @@ div.dashboard_content_main{
     background: white;
     min-height: 640px;
     height: 100%;
+    border: 1px solid #cdcdcd;
+    padding-left: 20px;
 }
 form::after{
     content: '';
@@ -300,11 +303,8 @@ p.userCount{
     text-transform: uppercase;
     color: #1b6cc8;
 }
-.editDelete{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
+/* SIDEBAR STYLE */
 
 .menuText{
     margin-left: 8px;
