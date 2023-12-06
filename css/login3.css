@@ -94,7 +94,6 @@ div.loginButtonContainer button:hover{
 div.dashboard_sidebar{
     width: 21%;
     background: #585757;
-    height: 100vh;
 }
 
 div.dashboard_content_container{
@@ -185,6 +184,10 @@ ul.dashboard_menu_lists li:hover{
     transition: 0.3s all;
 }
 
+ul.dashboard_menu_lists li.liMainMenus:hover{
+    background-color: #585757 ;
+}
+
 div.dashboard_topNav{
     background: white;
     padding: 20px;
@@ -235,6 +238,9 @@ div.appFormInputContainer{
 }
 div#userAddFormContainer{
     padding-top: 45px;
+}
+div#productAddFormContainer{
+    padding-top: 15px;
 }
 button.appBtn{
     background: #1b6cc8;

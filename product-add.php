@@ -1,9 +1,10 @@
 <?php 
     session_start();
     if(!isset($_SESSION['user'])) header('location: login.php');
-    $_SESSION['table'] = 'users';
+    $_SESSION['table'] = 'products';
+    $_SESSION['redirect_to'] = 'product-add.php';
+
     $user = $_SESSION['user'];
-    $users = include('database/show-users.php')
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +25,7 @@
                     <div class="row">
                         <div class="column column-12">  
                             <h1 class="section_header"><i class="fa fa-plus"></i> Create Product</h1>    
-                            <div id="userAddFormContainer">
+                            <div id="productAddFormContainer">
                                 <form action="database/add.php" method="POST" class="appForm">
                                     <div class="appFormInputContainer">
                                         <label for="id">ID</label>
@@ -33,6 +34,10 @@
                                     <div class="appFormInputContainer">
                                         <label for="type">Type</label>
                                         <input type="text" class="appFormInput" id="type" name="type"/>
+                                    </div>
+                                    <div class="appFormInputContainer">
+                                        <label for="location">Loction</label>
+                                        <input type="text" class="appFormInput" id="location" name="location"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="value">Value</label>
