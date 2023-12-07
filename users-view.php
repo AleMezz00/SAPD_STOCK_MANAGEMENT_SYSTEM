@@ -3,7 +3,9 @@
     if(!isset($_SESSION['user'])) header('location: login.php');
     $_SESSION['table'] = 'users';
     $user = $_SESSION['user'];
-    $users = include('database/show-users.php')
+
+    $_SESSION['table'] = 'users';
+    $users = include('database/show.php')
 ?>
 
 <!DOCTYPE html>
@@ -86,36 +88,38 @@
 
                     BootstrapDialog.confirm({
                         type: BootstrapDialog.TYPE_DANGER,
-                        message: 'Are you sure to delete '+ fullName + '?',
+                        title: 'Delete User',
+                        message: 'Are you sure to delete <strong>'+ fullName + '</strong>?',
                         callback: function(isDelete){
+                            if(isDelete){
                                 $.ajax({
                                 method: 'POST',
                                 data: {
-                                    user_id: userId,
-                                    f_name: fname,
-                                    l_name: lname
+                                    id: userId,
+                                    table: 'users'
                                 },
-                                url: 'database/delete-user.php',
+                                url: 'database/delete.php',
                                 dataType: 'json',
                                 success: function(data){
-                                    if(data.success){
-                                        BootstrapDialog.alert({
-                                            type: BootstrapDialog.TYPE_SUCCESS,
-                                            message: data.message,
-                                            callback: function(){
-                                                location.reload();
-                                            }
-                                        });
-                                        } else 
-                                            BootstrapDialog.alert({
-                                            type: BootstrapDialog.TYPE_DANGER,
-                                            message: data.message,
-                                        });                             
+
+                                    message = data.success ?
+                                            fullName + ' successfully deleted' : 'Error processing your request';
+
+                                    BootstrapDialog.alert({
+                                        type: data.success ? BootstrapDialog.TYPE_SUCCESS : BootstrapDialog.TYPE_DANGER,
+                                        message: message,
+                                        callback: function(){
+                                            if(data.success)
+                                            location.reload();
+                                        }
+                                    });                             
                                 }
                             });
                         }
+                        }
                     });
                 }
+
                 if(classList.contains('updateUser')){
                     e.preventDefault();
 

@@ -241,13 +241,14 @@ div#userAddFormContainer{
 }
 div#productAddFormContainer{
     padding-top: 15px;
+    padding-bottom: 25px;
 }
 button.appBtn{
     background: #1b6cc8;
     border: 1px solid aliceblue;
     color: aliceblue;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 5px;
     float: right;
     border-radius: 8px;
 }

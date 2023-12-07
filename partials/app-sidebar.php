@@ -1,4 +1,8 @@
+<?php
 
+$user = $_SESSION['user'];
+
+?>
 <div class="dashboard_sidebar" id="dashboard_sidebar">
     <h3 class="dashboard_logo" id="dashboard_logo">SMS</h3>
     <div class="dashboard_sidebar_user">

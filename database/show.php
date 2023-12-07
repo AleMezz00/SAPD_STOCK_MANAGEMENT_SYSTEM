@@ -1,7 +1,9 @@
 <?php
 include('connection.php');
 
-$stmt = $conn->prepare("SELECT * FROM users ORDER BY created_at DESC");
+$table_name = $_SESSION['table'];
+
+$stmt = $conn->prepare("SELECT * FROM $table_name ");
 $stmt->execute();
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 

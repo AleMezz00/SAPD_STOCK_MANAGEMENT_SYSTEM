@@ -29,15 +29,19 @@
                                 <form action="database/add.php" method="POST" class="appForm">
                                     <div class="appFormInputContainer">
                                         <label for="id">ID</label>
-                                        <input type="text" class="appFormInput" id="id" name="id"/>
+                                        <input type="number" class="appFormInput" id="id" name="id"/>
                                     </div>
                                     <div class="appFormInputContainer">
-                                        <label for="type">Type</label>
-                                        <input type="text" class="appFormInput" id="type" name="type"/>
+                                        <label for="product_name">Product Name</label>
+                                        <input type="text" class="appFormInput" id="product_name" name="product_name"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="location">Loction</label>
                                         <input type="text" class="appFormInput" id="location" name="location"/>
+                                    </div>
+                                    <div class="appFormInputContainer">
+                                        <label for="type">Type</label>
+                                        <input type="text" class="appFormInput" id="type" name="type"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="value">Value</label>
