@@ -43,7 +43,7 @@
                                             <?php foreach($products as $index => $product){ ?>
                                                 <tr>
                                                     <td><?= $index + 1 ?></td>
-                                                    <td class="id"><?= $product['id'] ?></td>
+                                                    <td class="product_id"><?= $product['product_id'] ?></td>
                                                     <td class="product_name"><?= $product['product_name'] ?></td>
                                                     <td class="location"><?= $product['location'] ?></td>
                                                     <td class="type"><?= $product['type'] ?></td>

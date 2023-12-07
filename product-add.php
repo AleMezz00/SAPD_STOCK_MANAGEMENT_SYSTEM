@@ -28,8 +28,8 @@
                             <div id="productAddFormContainer">
                                 <form action="database/add.php" method="POST" class="appForm">
                                     <div class="appFormInputContainer">
-                                        <label for="id">ID</label>
-                                        <input type="number" class="appFormInput" id="id" name="id"/>
+                                        <label for="product_id">ID</label>
+                                        <input type="text" class="appFormInput" id="product_id" name="product_id"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="product_name">Product Name</label>
@@ -64,7 +64,7 @@
                                         $is_success = $_SESSION['response']['success'];
                                 ?>
                                     <div class="responseMessage">
-                                        <p class="responseMessage <?= $is_success ? 'responseMessage__success' : 'responseMessage__error' ?>">
+                                        <p class="responseMessage <?= $is_success ? 'responseMessage_success' : 'responseMessage_error' ?>">
                                             <?= $response_message ?>
                                         </p>
                                     </div>
