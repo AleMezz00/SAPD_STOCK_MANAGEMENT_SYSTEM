@@ -51,7 +51,7 @@
                                                     <td class="avg_value"><?= $product['avg_value'] ?></td>
                                                     <td class="std_deviation"><?= $product['std_deviation'] ?></td>
                                                     <td class="editDelete">
-                                                        <a href="" class="updateProduct" data-pid="<?= $product['id'] ?>"><i class="fa fa-pencil"></i>  Edit</a>
+                                                        <a href="" class="updateProduct" data-pid="<?= $product['id'] ?>"><i class="fa fa-pencil"></i>  Edit</a> |
                                                         <a href="" class="deleteProduct" data-pid="<?= $product['id'] ?>" data-name="<?= $product['product_name'] ?>"><i class="fa fa-trash"></i>  Delete</a>
                                                     </td>
                                                 </tr>
@@ -72,6 +72,7 @@
 
 <script>
     function script(){
+        var vm = this;
 
         this.registerEvents = function(){
             document.addEventListener('click', function(e){
@@ -115,7 +116,87 @@
                         }
                     });
                 }
+
+                if(classList.contains('updateProduct')){
+                    e.preventDefault();
+
+                    pId = targetElement.dataset.pid;
+
+                    vm.showEditDialog(pId);
+
+                }
+
             });
+        }
+
+        this.showEditDialog = function(id){
+            $.get('database/get-product.php', {id: id}, function(productDetails){
+
+                    BootstrapDialog.confirm({
+                        title: 'Update <strong>' + productDetails.product_name + '</strong>',
+                        message: '<form>\
+                                    <div class="appFormInputContainer">\
+                                        <label for="product_id">ID</label>\
+                                        <input type="text" class="appFormInput" id="product_id" name="product_id"/>\
+                                    </div>\
+                                    <div class="appFormInputContainer">\
+                                        <label for="product_name">Product Name</label>\
+                                        <input type="text" class="appFormInput" id="product_name" name="product_name"/>\
+                                    </div>\
+                                    <div class="appFormInputContainer">\
+                                        <label for="location">Location</label>\
+                                        <input type="text" class="appFormInput" id="location" name="location"/>\
+                                    </div>\
+                                    <div class="appFormInputContainer">\
+                                        <label for="type">Type</label>\
+                                        <input type="text" class="appFormInput" id="type" name="type"/>\
+                                    </div>\
+                                    <div class="appFormInputContainer">\
+                                        <label for="value">Value</label>\
+                                        <input type="number" class="appFormInput" id="value" name="value"/>\
+                                    </div>\
+                                    <div class="appFormInputContainer">\
+                                        <label for="avg_value">Average Value</label>\
+                                        <input type="number" class="appFormInput" id="avg_value" name="avg_value"/>\
+                                    </div>\
+                                    <div class="appFormInputContainer">\
+                                        <label for="std_deviation">Standard Deviation</label>\
+                                        <input type="number" class="appFormInput" id="std_deviation" name="std_deviation"/>\
+                                    </div>\
+                                </form>',
+                        callback: function(isUpdate){
+                            if(isUpdate){
+                                $.ajax({
+                                    method: 'POST',
+                                    data: {
+                                        userId: userId,
+                                        f_name: document.getElementById('firstName').value,
+                                        l_name: document.getElementById('lastName').value,
+                                        email: document.getElementById('emailUpdate').value,
+                                    },
+                                    url: 'database/update-user.php',
+                                    dataType: 'json',
+                                    success: function(data){
+                                        if(data.success){
+                                            BootstrapDialog.alert({
+                                                type: BootstrapDialog.TYPE_SUCCESS,
+                                                message: data.message,
+                                                callback: function(){
+                                                    location.reload();
+                                                }
+                                            });
+                                            } else 
+                                                BootstrapDialog.alert({
+                                                type: BootstrapDialog.TYPE_DANGER,
+                                                message: data.message,
+                                            });                           
+                                    }
+                                });
+                            }
+                        }
+                    });
+            }, 'json');
+
         }
 
         this.initialize = function(){
