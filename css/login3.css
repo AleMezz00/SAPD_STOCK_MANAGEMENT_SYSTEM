@@ -92,12 +92,12 @@ div.loginButtonContainer button:hover{
 }
 
 div.dashboard_sidebar{
-    width: 21%;
+    width: 21.5%;
     background: #585757;
 }
 
 div.dashboard_content_container{
-    width: 79%;
+    width: 78.5%;
     background: aliceblue;
 }
 
@@ -137,7 +137,6 @@ div.dashboard_sidebar_user span{
 }
 
 ul.dashboard_menu_lists{
-    margin-top: 15px;
     list-style-type: none;
     padding: 0;
 }

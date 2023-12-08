@@ -8,7 +8,7 @@ toggleBtn.addEventListener( 'click', (event)  => {
     dashboard_sidebar.style.transition = '0.4s all';
     dashboard_content_container.style.width = '88%';
     dashboard_logo.style.fontSize = '65px';
-    userImage.style.width = '55px'
+    userImage.style.width = '60px'
     menuIcons = document.getElementsByClassName('menuText');
     for(var i=0; i<menuIcons.length ; i++){
         menuIcons[i].style.display = 'none';
@@ -18,8 +18,8 @@ toggleBtn.addEventListener( 'click', (event)  => {
     sidebarIsOpen = false;   
 
 } else {
-    dashboard_sidebar.style.width = '21%';
-    dashboard_content_container.style.width = '79%';
+    dashboard_sidebar.style.width = '21.5%';
+    dashboard_content_container.style.width = '78.5%';
     dashboard_logo.style.fontSize = '80px';
     userImage.style.width = '55px'
     menuIcons = document.getElementsByClassName('menuText');
