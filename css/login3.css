@@ -190,7 +190,10 @@ ul.dashboard_menu_lists li.liMainMenus:hover{
 
 div.dashboard_topNav{
     background: white;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 div.dashboard_topNav a{
     color: #848383;
@@ -216,7 +219,7 @@ form::after{
     display: block;
 }
 form.appForm{
-    width: 90%;
+    width: 55%;
     margin: 0 auto;
     padding: 10px;
     border: 1px solid #cecfd0;
@@ -237,7 +240,7 @@ div.appFormInputContainer{
     margin-bottom: 15px;
 }
 div#userAddFormContainer{
-    padding-top: 45px;
+    padding-top: 55px;
 }
 div#productAddFormContainer{
     padding-top: 15px;
@@ -298,6 +301,7 @@ h1.section_header{
     padding: 10px;
     border-left: 4px solid  #032b59;
     margin-bottom: 15px;
+    margin-top: 10px;
 }
 table, th, td{
     border: 1px solid #cacaca;

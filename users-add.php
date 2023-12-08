@@ -30,19 +30,19 @@
                                 <form action="database/add.php" method="POST" class="appForm">
                                     <div class="appFormInputContainer">
                                         <label for="first_name">First Name</label>
-                                        <input type="text" class="appFormInput" id="first_name" name="first_name"/>
+                                        <input type="text" class="appFormInput" id="first_name" placeholder="Enter user first name..." name="first_name"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="last_name">Last Name</label>
-                                        <input type="text" class="appFormInput" id="last_name" name="last_name"/>
+                                        <input type="text" class="appFormInput" id="last_name" placeholder="Enter user last name..." name="last_name"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="email">Email</label>
-                                        <input type="text" class="appFormInput" id="email" name="email"/>
+                                        <input type="text" class="appFormInput" id="email" placeholder="Enter user email..." name="email"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="password">Password</label>
-                                        <input type="password" class="appFormInput" id="password" name="password"/>
+                                        <input type="password" class="appFormInput" id="password" placeholder="Enter user password..." name="password"/>
                                     </div>
                                     <button type="submit" class="appBtn"><i class="fa fa-plus"></i> Add User</button>
                                 </form>

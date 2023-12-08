@@ -133,15 +133,15 @@
                         message: '<form>\
                         <div class="form-group">\
                             <label for="firstName">First Name:</label>\
-                            <input type="text" class="form-control" id="firstName" value="'+ firstName +'">\
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter user first name..." value="'+ firstName +'">\
                         </div>\
                         <div class="form-group">\
                             <label for="lastName">Last Name:</label>\
-                            <input type="text" class="form-control" id="lastName" value="'+ lastName +'">\
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter user last name..." value="'+ lastName +'">\
                         </div>\
                         <div class="form-group">\
                             <label for="email">E-mail Address:</label>\
-                            <input type="text" class="form-control" id="emailUpdate" value="'+ email +'">\
+                            <input type="text" class="form-control" id="emailUpdate" placeholder="Enter user email..." value="'+ email +'">\
                         </div>\
                         </form>',
                         callback: function(isUpdate){

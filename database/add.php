@@ -21,13 +21,6 @@ foreach($columns as $column){
 $table_properties = implode(", ", array_keys($db_arr));
 $table_placeholders = ':' . implode(", :", array_keys($db_arr));
 
-// USERS DATA
-//$first_name = $_POST['first_name'];
-//$last_name = $_POST['last_name'];
-//$email = $_POST['email'];
-//$password = $_POST['password'];
-//$encrypted = password_hash($password, PASSWORD_DEFAULT);
-
 try {
     $sql = "INSERT INTO 
                             $table_name($table_properties) 

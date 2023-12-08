@@ -26,34 +26,34 @@
                         <div class="column column-12">  
                             <h1 class="section_header"><i class="fa fa-plus"></i> Create Product</h1>    
                             <div id="productAddFormContainer">
-                                <form action="database/add.php" method="POST" class="appForm">
+                                <form action="database/add.php" method="POST" class="appForm" enctype="multipart/form-data">
                                     <div class="appFormInputContainer">
                                         <label for="product_id">ID</label>
-                                        <input type="text" class="appFormInput" id="product_id" name="product_id"/>
+                                        <input type="text" class="appFormInput" id="product_id" placeholder="Enter product id..." name="product_id"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="product_name">Product Name</label>
-                                        <input type="text" class="appFormInput" id="product_name" name="product_name"/>
+                                        <input type="text" class="appFormInput" id="product_name" placeholder="Enter product name..." name="product_name"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="location">Loction</label>
-                                        <input type="text" class="appFormInput" id="location" name="location"/>
+                                        <input type="text" class="appFormInput" id="location" placeholder="Enter product location..." name="location"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="type">Type</label>
-                                        <input type="text" class="appFormInput" id="type" name="type"/>
+                                        <input type="text" class="appFormInput" id="type" placeholder="Enter product type..." name="type"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="value">Value</label>
-                                        <input type="number" class="appFormInput" id="value" name="value"/>
+                                        <input type="number" class="appFormInput" id="value" placeholder="Enter product value..." name="value"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="avg_value">Average Value</label>
-                                        <input type="number" class="appFormInput" id="avg_value" name="avg_value"/>
+                                        <input type="number" class="appFormInput" id="avg_value" placeholder="Enter product average value..." name="avg_value"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="std_deviation">Standard Deviation</label>
-                                        <input type="number" class="appFormInput" id="std_deviation" name="std_deviation"/>
+                                        <input type="number" class="appFormInput" id="std_deviation" placeholder="Enter product standard deviation..." name="std_deviation"/>
                                     </div>
                                     <button type="submit" class="appBtn"><i class="fa fa-plus"></i> Add Product</button>
                                 </form>
@@ -64,7 +64,7 @@
                                         $is_success = $_SESSION['response']['success'];
                                 ?>
                                     <div class="responseMessage">
-                                        <p class="responseMessage <?= $is_success ? 'responseMessage_success' : 'responseMessage_error' ?>">
+                                        <p class="responseMessage <?= $is_success ? 'responseMessage__success' : 'responseMessage__error' ?>">
                                             <?= $response_message ?>
                                         </p>
                                     </div>
