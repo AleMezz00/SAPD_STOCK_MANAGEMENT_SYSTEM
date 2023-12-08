@@ -143,27 +143,11 @@ ul.dashboard_menu_lists{
 }
 
 ul.dashboard_menu_lists li.liMainMenu{
-    padding-top:15px;
     text-transform: uppercase;
 }
 
 ul.dashboard_menu_lists li.liMainMenu a{
-    padding:0px 15px;
-    text-decoration: none;
-    color: aliceblue;
-    height: 100%;
-    display: block;
-    font-size: 16px;
-    padding-bottom: 15px;
- 
-}
-ul.dashboard_menu_lists li.liMainMenus{
-    padding-top:15px;
-    text-transform: uppercase;
-}
-
-ul.dashboard_menu_lists li.liMainMenus a{
-    padding:0px 15px;
+    padding:15px 15px;
     text-decoration: none;
     color: aliceblue;
     height: 100%;
@@ -182,10 +166,6 @@ ul.dashboard_menu_lists li:hover{
     background: #043976;
     color: aliceblue;
     transition: 0.3s all;
-}
-
-ul.dashboard_menu_lists li.liMainMenus:hover{
-    background-color: #585757 ;
 }
 
 div.dashboard_topNav{

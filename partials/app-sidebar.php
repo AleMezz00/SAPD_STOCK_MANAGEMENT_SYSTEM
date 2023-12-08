@@ -13,7 +13,7 @@ $user = $_SESSION['user'];
         <ul class="dashboard_menu_lists">
             <!-- class="menuActive" -->
 
-            <li class="liMainMenus ">
+            <li class="liMainMenu ">
                 <a href="./dashboard.php"> <i class="fa fa-dashboard"></i> <span class="menuText"> Dashboard </span> </a>
             </li>
 
