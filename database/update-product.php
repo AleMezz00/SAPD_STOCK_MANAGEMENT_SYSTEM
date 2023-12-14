@@ -3,7 +3,7 @@
 $product_id = $_POST['product_id'];
 $product_name = $_POST['product_name'];
 $location = $_POST['location'];
-$type = $_POST['type'];
+$data_type = $_POST['data_type'];
 $value = $_POST['value'];
 $avg_value = $_POST['avg_value'];
 $std_deviation = $_POST['std_deviation'];
@@ -12,13 +12,13 @@ $pid = $_POST['pid'];
 try{
     $sql = "UPDATE products 
                 SET 
-                product_id =?, product_name = ?, location = ?, type = ?, value = ?, avg_value = ?, std_deviation = ?
+                product_id =?, product_name = ?, location = ?, data_type = ?, value = ?, avg_value = ?, std_deviation = ?
                 WHERE id=?";
 
     include('connection.php');
 
     $stmt = $conn->prepare($sql);
-    $stmt->execute([$product_id, $product_name, $location, $type, $value, $avg_value, $std_deviation, $pid ]);
+    $stmt->execute([$product_id, $product_name, $location, $data_type, $value, $avg_value, $std_deviation, $pid ]);
 
     $response = [
     'success' => true,

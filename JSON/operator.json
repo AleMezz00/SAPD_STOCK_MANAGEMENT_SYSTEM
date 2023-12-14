@@ -1,0 +1,11 @@
+{
+    "district": "Amici della coop 2",
+    "id": "op-780",
+    "item_id": "i-809098090",
+    "what": "cassetta_frutta",
+    "description": "lorem_ipsum",
+    "quantity_type": "item|litres|kg|area",
+    "quantity": 1,
+    "signature": "whatever_is_here",
+    "public_key": "whatever_is_here"
+}

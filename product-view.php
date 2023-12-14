@@ -32,7 +32,7 @@
                                                 <th>id</th>
                                                 <th>Product Name</th>
                                                 <th>Location</th>
-                                                <th>Type</th>
+                                                <th>Data Type</th>
                                                 <th>Value</th>
                                                 <th>Average Value</th>
                                                 <th>Standard Deviation</th>
@@ -46,7 +46,7 @@
                                                     <td class="product_id"><?= $product['product_id'] ?></td>
                                                     <td class="product_name"><?= $product['product_name'] ?></td>
                                                     <td class="location"><?= $product['location'] ?></td>
-                                                    <td class="type"><?= $product['type'] ?></td>
+                                                    <td class="data_type"><?= $product['data_type'] ?></td>
                                                     <td class="value"><?= $product['value'] ?></td>
                                                     <td class="avg_value"><?= $product['avg_value'] ?></td>
                                                     <td class="std_deviation"><?= $product['std_deviation'] ?></td>
@@ -180,8 +180,8 @@
                                     <input type="text" class="appFormInput" id="location" value="' + productDetails.location +'" placeholder="Enter product location..." name="location"/>\
                                 </div>\
                                 <div class="appFormInputContainer">\
-                                    <label for="type">Type</label>\
-                                    <input type="text" class="appFormInput" id="type" value="' + productDetails.type +'" placeholder="Enter product type..." name="type"/>\
+                                    <label for="data_type">Data Type</label>\
+                                    <input type="text" class="appFormInput" id="data_type" value="' + productDetails.data_type +'" placeholder="Enter product type..." name="data_type"/>\
                                 </div>\
                                 <div class="appFormInputContainer">\
                                     <label for="value">Value</label>\

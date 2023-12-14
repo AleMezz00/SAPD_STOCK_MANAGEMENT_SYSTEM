@@ -36,12 +36,12 @@
                                         <input type="text" class="appFormInput" id="product_name" placeholder="Enter product name..." name="product_name"/>
                                     </div>
                                     <div class="appFormInputContainer">
-                                        <label for="location">Loction</label>
+                                        <label for="location">Location</label>
                                         <input type="text" class="appFormInput" id="location" placeholder="Enter product location..." name="location"/>
                                     </div>
                                     <div class="appFormInputContainer">
-                                        <label for="type">Type</label>
-                                        <input type="text" class="appFormInput" id="type" placeholder="Enter product type..." name="type"/>
+                                        <label for="data_type"> Data Type</label>
+                                        <input type="text" class="appFormInput" id="data_type" placeholder="Enter product type..." name="data_type"/>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="value">Value</label>
