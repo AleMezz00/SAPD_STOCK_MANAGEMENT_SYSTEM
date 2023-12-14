@@ -1,11 +1,9 @@
 {
-    "district": "Amici della coop 2",
-    "id": "e-780",
-    "location": "product_1",
+    "product_id": "e-780",
+    "product_name": "anguria",
+    "location": "magazzino",
     "data_type": "temperature", 
     "value": 20.0,
     "avg_value": 29.9,
-    "std_dev": 0.01,
-    "signature": "whatever_is_here",
-    "public_key": "whatever_is_here"
+    "std_deviation": 0.01
 }
