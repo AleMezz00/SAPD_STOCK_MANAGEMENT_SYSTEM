@@ -3,9 +3,11 @@ include('connection.php');
 
 $table_name = $_SESSION['table'];
 
-// Verifica se la tabella è quella dei prodotti
+// LA PARTE COMMENTATA E' IL TENTATIVO FATTO CON CHAT GPT
+
+/*
 if ($table_name === 'products') {
-    // Inserimento dei dati dal file JSON al database solo se la tabella è 'products'
+
     if (file_exists('../JSON/edge.json')) {
         $jsonData = json_decode(file_get_contents('../JSON/edge.json'), true);
         $stmt = $conn->prepare("INSERT INTO $table_name (product_id, product_name, location, data_type, value, avg_value, std_deviation) VALUES (?, ?, ?, ?, ?, ?, ?)");
@@ -23,8 +25,8 @@ if ($table_name === 'products') {
         }
     }
 }
+*/
 
-// Recupero di tutti i prodotti (sia manuali che dal JSON)
 $stmt = $conn->prepare("SELECT * FROM $table_name");
 $stmt->execute();
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
