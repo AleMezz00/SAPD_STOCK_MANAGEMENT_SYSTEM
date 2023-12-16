@@ -22,34 +22,44 @@
                 <div class="dashboard_content_main">
                     <div class="row">
                         <div class="column column-12">
-                            <h1 class="section_header"><i class="fa fa-list"></i> List of Ordered Products</h1> 
+                            <h1 class="section_header"><i class="fa fa-list"></i> List of Orders</h1> 
                             <div class="section_content">
                                 <div class="users">
-                                    <h3>ORDINE 1</h3>
-                                    <table>
-                                        <thead>
+                                    <?php 
+                                        $previousOrderID = null;
+                                        foreach ($orders as $order): 
+                                            $currentOrderID = $order['order_id'];
+                                            // Se l'ID dell'ordine è diverso, inizia una nuova tabella
+                                            if ($currentOrderID !== $previousOrderID):
+                                        ?>
+                                            <?php if ($previousOrderID !== null): ?>
+                                                </tbody>
+                                                </table>
+                                            <?php endif; ?>
+                                            <h3>Order ID: <?php echo $currentOrderID; ?></h3>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product ID</th>
+                                                        <th>Product Name</th>
+                                                        <th>Location</th>
+                                                        <th>Quantity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                            <?php endif; ?>
                                             <tr>
-                                                <th>#</th>
-                                                <th>Order Id</th>
-                                                <th>Product Id</th>
-                                                <th>Product Name</th>
-                                                <th>Location</th>
-                                                <th>Quantity</th>
+                                                <td><?php echo $order['product_id']; ?></td>
+                                                <td><?php echo $order['product_name']; ?></td>
+                                                <td><?php echo $order['location']; ?></td>
+                                                <td><?php echo $order['quantity']; ?></td>
                                             </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php foreach($orders as $index => $order){ ?>
-                                                <tr>
-                                                    <td><?= $index + 1 ?></td>
-                                                    <td class="order_id"><?= $order['order_id'] ?></td>
-                                                    <td class="product_id"><?= $order['product_id'] ?></td>
-                                                    <td class="product_name"><?= $order['product_name'] ?></td>
-                                                    <td class="location"><?= $order['location'] ?></td>
-                                                    <td class="quantity"><?= $order['quantity'] ?></td>
-                                                </tr>
-                                            <?php } ?>    
+                                            <?php 
+                                            $previousOrderID = $currentOrderID;
+                                        endforeach; 
+                                        ?>
                                         </tbody>
-                                    </table>
+                                        </table>
                                 </div>
                             </div>
                         </div>

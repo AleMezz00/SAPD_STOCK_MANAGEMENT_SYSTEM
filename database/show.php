@@ -9,3 +9,6 @@ $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
 return $stmt->fetchAll();
 
+$orders = $stmt->fetchAll();
+
+return $orders;
