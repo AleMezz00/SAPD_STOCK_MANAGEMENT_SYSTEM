@@ -40,6 +40,10 @@ $user = $_SESSION['user'];
                     <li><a class="subMenuLink" href="./users-view.php"> <i class="fa fa-circle-o"></i> View Users</a></li>
                 </ul>
             </li>
+
+            <li class="liMainMenu ">
+                <a href="./order-view.php"> <i class="fa fa-truck"></i> <span class="menuText"> View Orders </span> </a>
+            </li>
         </ul>
     </div>
 </div>

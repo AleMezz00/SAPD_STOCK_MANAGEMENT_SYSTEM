@@ -3,7 +3,7 @@
     if(!isset($_SESSION['user'])) header('location: login.php');
 
     $_SESSION['table'] = 'products';
-    $products = include('database/show.php')
+    $products = include('database/show.php');
 ?>
 
 <!DOCTYPE html>
