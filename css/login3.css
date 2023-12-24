@@ -215,6 +215,19 @@ form input.appFormInput{
     border: 1px solid #d6d7da;
     border-radius: 5px;
 }
+.appFormInputLocation{
+    width: 100%;
+    height: 33px;
+    border: 1px solid #d6d7da;
+    border-radius: 5px;
+}
+.appFormInputLocation:hover{
+    width: 100%;
+    height: 33px;
+    border: 1px solid #d6d7da;
+    border-radius: 5px;
+    cursor:pointer;
+}
 div.appFormInputContainer{
     margin-bottom: 15px;
 }

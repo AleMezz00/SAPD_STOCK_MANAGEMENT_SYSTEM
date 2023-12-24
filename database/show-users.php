@@ -6,3 +6,4 @@ $stmt->execute();
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
 return $stmt->FetchAll();
+?>

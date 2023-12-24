@@ -5,7 +5,7 @@
     $user = $_SESSION['user'];
 
     $_SESSION['table'] = 'users';
-    $users = include('database/show.php')
+    $users = include('database/show-users.php')
 ?>
 
 <!DOCTYPE html>

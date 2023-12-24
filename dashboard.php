@@ -3,11 +3,6 @@
     if(!isset($_SESSION['user'])) header('location: login.php');
     $user = $_SESSION['user'];
     
-    $_SESSION['table'] = 'products';
-    $products = include('database/show.php');
-
-    $_SESSION['table'] = 'users';
-    $users = include('database/show.php');
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +18,7 @@
             <?php include('partials/app-topnav.php') ?>
                 <div class="dashboard_content">
                     <div class="dashboard_content_main">
-
+                        
                     </div>   
                 </div>
             </div>

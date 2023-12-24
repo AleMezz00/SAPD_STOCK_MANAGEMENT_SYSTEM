@@ -37,7 +37,11 @@
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="location">Location</label>
-                                        <input type="text" class="appFormInput" id="location" placeholder="Enter product location..." name="location"/>
+                                        <select class="appFormInputLocation" id="location" name="location">
+                                        <option value="magazzino1">Magazzino 1</option>
+                                        <option value="magazzino2">Magazzino 2</option>
+                                        <option value="magazzino3">Magazzino 3</option>
+                                        </select>
                                     </div>
                                     <div class="appFormInputContainer">
                                         <label for="data_type"> Data Type</label>

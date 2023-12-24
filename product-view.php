@@ -40,7 +40,13 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php foreach($products as $index => $product){ ?>
+                                        <?php
+                                        // Filtrare solo i prodotti con location consentite
+                                        $filteredProducts = array_filter($products, function ($product) {
+                                            $allowed_locations = ['magazzino1', 'magazzino2', 'magazzino3'];
+                                            return in_array($product['location'], $allowed_locations);
+                                        }); ?>  
+                                            <?php foreach($filteredProducts as $index => $product){ ?>
                                                 <tr>
                                                     <td><?= $index + 1 ?></td>
                                                     <td class="product_id"><?= $product['product_id'] ?></td>
@@ -58,7 +64,7 @@
                                             <?php } ?>    
                                         </tbody>
                                     </table>
-                                    <p class="userCount"><?= count($products) ?> Products </p>
+                                    <p class="userCount"><?= count($filteredProducts) ?> Products </p>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +183,12 @@
                                 </div>\
                                 <div class="appFormInputContainer">\
                                     <label for="location">Location</label>\
-                                    <input type="text" class="appFormInput" id="location" value="' + productDetails.location +'" placeholder="Enter product location..." name="location"/>\
+                                    <label for="location">Location</label>\
+                                        <select class="appFormInput" id="location" name="location">\
+                                        <option value="magazzino1">Magazzino 1</option>\
+                                        <option value="magazzino2">Magazzino 2</option>\
+                                        <option value="magazzino3">Magazzino 3</option>\
+                                        </select>\
                                 </div>\
                                 <div class="appFormInputContainer">\
                                     <label for="data_type">Data Type</label>\
