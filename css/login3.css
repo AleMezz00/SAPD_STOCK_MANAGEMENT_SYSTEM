@@ -396,3 +396,74 @@ i.mainMenuIconArrow{
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
+
+#reportsContainer{
+    background: white;
+    min-height: 640px;
+    height: 100%;
+    border: 1px solid #cdcdcd;
+}
+
+.reportTypeContainer{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 31px;
+}
+.reportType1{
+    border: 1px solid #c2c6c2;
+    padding: 10px 24px;
+    border-radius: 4px;
+    background: aliceblue;
+    font-size: 19px;
+    width: 100%;
+    margin-top: 15px;
+}
+.reportType{
+    border: 1px solid #c2c6c2;
+    padding: 10px 24px;
+    border-radius: 4px;
+    background: aliceblue;
+    font-size: 19px;
+    margin-left: 21px;
+    width: 100%;
+    margin-top: 15px;
+}
+.reportType2{
+    border: 1px solid #c2c6c2;
+    padding: 10px 24px;
+    border-radius: 4px;
+    background: aliceblue;
+    font-size: 19px;
+    width: 49%;
+    margin-top: 15px;
+}
+.alignRight{
+    text-align: right;
+}
+.reportExportBtn{
+    padding: 4px 15px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #1b6cc8;
+    color: white;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-left: 8px;
+}
+.reportExportBtn:hover{
+    background-color: #032b59;
+    color: aliceblue;
+}
+.reportType1 p{
+    font-size: 20px;
+    font-weight: 100;
+}
+.reportType2 p{
+    font-size: 20px;
+    font-weight: 100;
+}
+.reportType p{
+    font-size: 20px;
+    font-weight: 100;
+}

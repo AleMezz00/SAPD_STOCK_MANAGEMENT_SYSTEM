@@ -17,6 +17,10 @@ $user = $_SESSION['user'];
                 <a href="./dashboard.php"> <i class="fa fa-dashboard"></i> <span class="menuText"> Dashboard </span> </a>
             </li>
 
+            <li class="liMainMenu ">
+                <a href="./report.php"> <i class="fa fa-file"></i> <span class="menuText"> Reports </span> </a>
+            </li>
+
             <li class="liMainMenu showHideSubMenu">
                 <a href="javascript:void(0);" class="showHideSubMenu"> 
                     <i class="fa fa-tag showHideSubMenu"></i> 
@@ -44,6 +48,7 @@ $user = $_SESSION['user'];
             <li class="liMainMenu ">
                 <a href="./order-view.php"> <i class="fa fa-truck"></i> <span class="menuText"> View Orders </span> </a>
             </li>
+
         </ul>
     </div>
 </div>
