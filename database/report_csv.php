@@ -21,7 +21,7 @@ include ('connection.php');
 
 //PRODUCT EXPORT
 if($type === 'product'){  
-    $stmt = $conn->prepare("SELECT * FROM products WHERE location IN ('magazzino1', 'magazzino2', 'magazzino3')");
+    $stmt = $conn->prepare("SELECT product_id, product_name, location, data_type, value, avg_value, std_deviation FROM products WHERE location IN ('magazzino1', 'magazzino2', 'magazzino3')");
     $stmt->execute();
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
@@ -47,7 +47,7 @@ if($type === 'product'){
 
 //USER EXPORT
 if($type === 'user'){  
-    $stmt = $conn->prepare("SELECT * FROM users ORDER BY created_at DESC");
+    $stmt = $conn->prepare("SELECT first_name, last_name, email, created_at, updated_at FROM users ORDER BY created_at DESC");
     $stmt->execute();
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
@@ -73,7 +73,7 @@ if($type === 'user'){
 
 //ORDER EXPORT
 if($type === 'order'){  
-    $stmt = $conn->prepare("SELECT * FROM orders ");
+    $stmt = $conn->prepare("SELECT order_id, product_id, product_name, location, quantity FROM orders ");
     $stmt->execute();
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
