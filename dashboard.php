@@ -22,12 +22,11 @@
             <?php include('partials/app-topnav.php') ?>
                 <div class="dashboard_content">
                     <div class="dashboard_content_main">
+                        <h2 class="chartMainTitle">Products Location</h2>
                         <figure class="highcharts-figure">
                         <div id="container"></div>
                         <p class="highcharts-description">
-                        Pie charts are very popular for showing a compact overview of a
-                        composition or comparison. While they can be harder to read than
-                        column charts, they remain a popular choice for small datasets.
+                            This is a pie chart which represents the actual status of the products stocked, based on their location.
                         </p>
                         </figure>
                     </div>   
@@ -45,7 +44,7 @@
                     type: 'pie'
                 },
                 title: {
-                    text: 'Product By Location'
+                    text: ''
                 },
                 tooltip: {
                     pointFormatter: function(){
@@ -88,7 +87,6 @@
                 ]
             });
         </script>
-
         <?php include('partials/app-scripts.php'); ?>
     </body>
 </html>

@@ -354,6 +354,16 @@ i.mainMenuIconArrow{
     padding-top: 15px !important;
 }
 
+.chartMainTitle{
+    color: aliceblue;
+    font-size: 60px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#074184;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 .highcharts-figure,
 .highcharts-data-table table {
     min-width: 320px;
