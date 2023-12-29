@@ -8,7 +8,7 @@ $table_name = $_SESSION['table'];
 $columns = $table_columns_mapping[$table_name];
  
 // DEFINED LOCATIONS
-$allowed_locations = ['magazzino1', 'magazzino2', 'magazzino3'];
+$allowed_locations = ['stock1', 'stock2', 'stock3'];
  
 // LOOP THROUGH THE COLUMNS
 $db_arr = [];

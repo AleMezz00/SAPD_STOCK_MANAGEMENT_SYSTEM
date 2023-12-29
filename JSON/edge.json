@@ -1,7 +1,7 @@
 {
     "product_id": "e-780",
     "product_name": "anguria",
-    "location": "magazzino",
+    "location": "stock1",
     "data_type": "temperature", 
     "value": 20.0,
     "avg_value": 29.9,

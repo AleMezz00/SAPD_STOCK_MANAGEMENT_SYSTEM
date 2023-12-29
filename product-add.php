@@ -28,7 +28,7 @@
                             <div id="productAddFormContainer">
                                 <form action="database/add.php" method="POST" class="appForm" enctype="multipart/form-data">
                                     <div class="appFormInputContainer">
-                                        <label for="product_id">ID</label>
+                                        <label for="product_id">Product ID</label>
                                         <input type="text" class="appFormInput" id="product_id" placeholder="Enter product id..." name="product_id"/>
                                     </div>
                                     <div class="appFormInputContainer">
@@ -38,13 +38,13 @@
                                     <div class="appFormInputContainer">
                                         <label for="location">Location</label>
                                         <select class="appFormInputLocation" id="location" name="location">
-                                        <option value="magazzino1">Magazzino 1</option>
-                                        <option value="magazzino2">Magazzino 2</option>
-                                        <option value="magazzino3">Magazzino 3</option>
+                                        <option value="stock1">Stock 1</option>
+                                        <option value="stock2">Stock 2</option>
+                                        <option value="stock3">Stock 3</option>
                                         </select>
                                     </div>
                                     <div class="appFormInputContainer">
-                                        <label for="data_type"> Data Type</label>
+                                        <label for="data_type">Data Type</label>
                                         <input type="text" class="appFormInput" id="data_type" placeholder="Enter product type..." name="data_type"/>
                                     </div>
                                     <div class="appFormInputContainer">

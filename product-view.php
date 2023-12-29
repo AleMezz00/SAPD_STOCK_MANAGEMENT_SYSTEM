@@ -43,7 +43,7 @@
                                         <?php
                                         // Filtrare solo i prodotti con location consentite
                                         $filteredProducts = array_filter($products, function ($product) {
-                                            $allowed_locations = ['magazzino1', 'magazzino2', 'magazzino3'];
+                                            $allowed_locations = ['stock1', 'stock2', 'stock3'];
                                             return in_array($product['location'], $allowed_locations);
                                         }); ?>  
                                             <?php foreach($filteredProducts as $index => $product){ ?>
@@ -184,9 +184,9 @@
                                 <div class="appFormInputContainer">\
                                 <label for="location">Location</label>\
                                     <select class="appFormInput" id="location" name="location">\
-                                        <option value="magazzino1"' + (productDetails.location === 'magazzino1' ? ' selected' : '') + '>Magazzino 1</option>\
-                                        <option value="magazzino2"' + (productDetails.location === 'magazzino2' ? ' selected' : '') + '>Magazzino 2</option>\
-                                        <option value="magazzino3"' + (productDetails.location === 'magazzino3' ? ' selected' : '') + '>Magazzino 3</option>\
+                                        <option value="stock1"' + (productDetails.location === 'stock1' ? ' selected' : '') + '>Stock 1</option>\
+                                        <option value="stock2"' + (productDetails.location === 'stock2' ? ' selected' : '') + '>Stock 2</option>\
+                                        <option value="stock3"' + (productDetails.location === 'stock3' ? ' selected' : '') + '>Stock 3</option>\
                                     </select>\
                                 </div>\
                                 <div class="appFormInputContainer">\

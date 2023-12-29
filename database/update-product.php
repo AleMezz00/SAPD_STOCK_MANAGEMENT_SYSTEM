@@ -8,12 +8,12 @@ $avg_value = $_POST['avg_value'];
 $quantity = $_POST['quantity'];
 $pid = $_POST['pid'];
  
-$allowed_locations = ['magazzino1', 'magazzino2', 'magazzino3'];
+$allowed_locations = ['stock1', 'stock2', 'stock3'];
  
 if (!in_array($location, $allowed_locations)) {
     $response = [
         'success' => false,
-        'message' => 'Location should be either magazzino1, magazzino2, or magazzino3'
+        'message' => 'Location should be either stock1, stock2, or stock3'
     ];
 } else {
     try {

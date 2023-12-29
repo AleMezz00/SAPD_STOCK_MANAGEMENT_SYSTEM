@@ -1,6 +1,6 @@
 <?php
 include('connection.php');
-$locations = ['magazzino1', 'magazzino2', 'magazzino3'];
+$locations = ['stock1', 'stock2', 'stock3'];
 
 $results = [];
 

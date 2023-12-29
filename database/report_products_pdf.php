@@ -57,7 +57,7 @@ include('connection.php');
 if($type == 'product'){
     $header = array('Product ID', 'Product Name', 'Location', 'Type', 'Value', 'Avg Value', 'Quantity');
 
-    $stmt = $conn->prepare("SELECT * FROM products WHERE location IN ('magazzino1', 'magazzino2', 'magazzino3')");
+    $stmt = $conn->prepare("SELECT * FROM products WHERE location IN ('stock1', 'stock2', 'stock3')");
     $stmt->execute();
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
