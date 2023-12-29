@@ -5,5 +5,5 @@
     "data_type": "temperature", 
     "value": 20.0,
     "avg_value": 29.9,
-    "std_deviation": 0.01
+    "quantity": 50
 }

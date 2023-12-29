@@ -56,8 +56,8 @@
                                         <input type="number" class="appFormInput" id="avg_value" placeholder="Enter product average value..." name="avg_value"/>
                                     </div>
                                     <div class="appFormInputContainer">
-                                        <label for="std_deviation">Standard Deviation</label>
-                                        <input type="number" class="appFormInput" id="std_deviation" placeholder="Enter product standard deviation..." name="std_deviation"/>
+                                        <label for="quantity">Quantity</label>
+                                        <input type="number" class="appFormInput" id="quantity" placeholder="Enter product quantity..." name="quantity"/>
                                     </div>
                                     <button type="submit" class="appBtn"><i class="fa fa-plus"></i> Add Product</button>
                                 </form>

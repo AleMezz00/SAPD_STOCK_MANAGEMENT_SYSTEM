@@ -21,7 +21,7 @@ include ('connection.php');
 
 //PRODUCT EXPORT
 if($type === 'product'){  
-    $stmt = $conn->prepare("SELECT product_id, product_name, location, data_type, value, avg_value, std_deviation FROM products WHERE location IN ('magazzino1', 'magazzino2', 'magazzino3')");
+    $stmt = $conn->prepare("SELECT product_id, product_name, location, data_type, value, avg_value, quantity FROM products WHERE location IN ('magazzino1', 'magazzino2', 'magazzino3')");
     $stmt->execute();
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
 

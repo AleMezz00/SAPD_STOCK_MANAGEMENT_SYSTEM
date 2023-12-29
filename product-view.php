@@ -35,7 +35,7 @@
                                                 <th>Data Type</th>
                                                 <th>Value</th>
                                                 <th>Average Value</th>
-                                                <th>Standard Deviation</th>
+                                                <th>Quantity</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -55,7 +55,7 @@
                                                     <td class="data_type"><?= $product['data_type'] ?></td>
                                                     <td class="value"><?= $product['value'] ?></td>
                                                     <td class="avg_value"><?= $product['avg_value'] ?></td>
-                                                    <td class="std_deviation"><?= $product['std_deviation'] ?></td>
+                                                    <td class="quantity"><?= $product['quantity'] ?></td>
                                                     <td class="editDelete">
                                                         <a href="" class="updateProduct" data-pid="<?= $product['id'] ?>"><i class="fa fa-pencil"></i>  Edit</a> |
                                                         <a href="" class="deleteProduct" data-pid="<?= $product['id'] ?>" data-name="<?= $product['product_name'] ?>"><i class="fa fa-trash"></i>  Delete</a>
@@ -203,8 +203,8 @@
                                     <input type="number" class="appFormInput" id="avg_value" value="' + productDetails.avg_value +'" placeholder="Enter product average value..." name="avg_value"/>\
                                 </div>\
                                 <div class="appFormInputContainer">\
-                                    <label for="std_deviation">Standard Deviation</label>\
-                                    <input type="number" class="appFormInput" id="std_deviation" value="' + productDetails.std_deviation +'" placeholder="Enter product standard deviation..." name="std_deviation"/>\
+                                    <label for="quantity">Quantity</label>\
+                                    <input type="number" class="appFormInput" id="quantity" value="' + productDetails.quantity +'" placeholder="Enter product Quantity..." name="quantity"/>\
                                 </div>\
                                 <input type="hidden" name="pid" value="'+ productDetails.id +'" />\
                                 <input type="submit" value="submit" id="editProductSubmitBtn" class="hidden"/>\

@@ -5,7 +5,7 @@ $location = $_POST['location'];
 $data_type = $_POST['data_type'];
 $value = $_POST['value'];
 $avg_value = $_POST['avg_value'];
-$std_deviation = $_POST['std_deviation'];
+$quantity = $_POST['quantity'];
 $pid = $_POST['pid'];
  
 $allowed_locations = ['magazzino1', 'magazzino2', 'magazzino3'];
@@ -18,13 +18,13 @@ if (!in_array($location, $allowed_locations)) {
 } else {
     try {
         $sql = "UPDATE products
-                SET product_id = ?, product_name = ?, location = ?, data_type = ?, value = ?, avg_value = ?, std_deviation = ?
+                SET product_id = ?, product_name = ?, location = ?, data_type = ?, value = ?, avg_value = ?, quantity = ?
                 WHERE id = ?";
  
         include('connection.php');
  
         $stmt = $conn->prepare($sql);
-        $stmt->execute([$product_id, $product_name, $location, $data_type, $value, $avg_value, $std_deviation, $pid]);
+        $stmt->execute([$product_id, $product_name, $location, $data_type, $value, $avg_value, $quantity, $pid]);
  
         $response = [
             'success' => true,

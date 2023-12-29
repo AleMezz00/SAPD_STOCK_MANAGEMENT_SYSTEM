@@ -79,7 +79,7 @@ if($type == 'product'){
             $product['data_type'],
             $product['value'],
             $product['avg_value'],
-            $product['std_deviation'],
+            $product['quantity'],
         ];
     }
 }   
