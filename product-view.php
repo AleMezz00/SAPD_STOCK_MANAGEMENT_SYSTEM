@@ -182,13 +182,12 @@
                                     <input type="text" class="appFormInput" id="product_name" value="' + productDetails.product_name +'" placeholder="Enter product name..." name="product_name"/>\
                                 </div>\
                                 <div class="appFormInputContainer">\
-                                    <label for="location">Location</label>\
-                                    <label for="location">Location</label>\
-                                        <select class="appFormInput" id="location" name="location">\
-                                        <option value="magazzino1">Magazzino 1</option>\
-                                        <option value="magazzino2">Magazzino 2</option>\
-                                        <option value="magazzino3">Magazzino 3</option>\
-                                        </select>\
+                                <label for="location">Location</label>\
+                                    <select class="appFormInput" id="location" name="location">\
+                                        <option value="magazzino1"' + (productDetails.location === 'magazzino1' ? ' selected' : '') + '>Magazzino 1</option>\
+                                        <option value="magazzino2"' + (productDetails.location === 'magazzino2' ? ' selected' : '') + '>Magazzino 2</option>\
+                                        <option value="magazzino3"' + (productDetails.location === 'magazzino3' ? ' selected' : '') + '>Magazzino 3</option>\
+                                    </select>\
                                 </div>\
                                 <div class="appFormInputContainer">\
                                     <label for="data_type">Data Type</label>\
