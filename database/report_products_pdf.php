@@ -55,7 +55,7 @@ $report_headers = [
 include('connection.php');
     
 if($type == 'product'){
-    $header = array('Product ID', 'Product Name', 'Location', 'Type', 'Value', 'Avg Value', 'Std Deviation');
+    $header = array('Product ID', 'Product Name', 'Location', 'Type', 'Value', 'Avg Value', 'Quantity');
 
     $stmt = $conn->prepare("SELECT * FROM products WHERE location IN ('magazzino1', 'magazzino2', 'magazzino3')");
     $stmt->execute();
