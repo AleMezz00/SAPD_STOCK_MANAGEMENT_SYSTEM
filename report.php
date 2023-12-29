@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dashboard - Stock Management System</title>
+        <title>Reports - Stock Management System</title>
         <?php include('partials/app-header-scripts.php'); ?>
     </head>
     <body>
